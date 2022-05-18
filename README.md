@@ -6,7 +6,7 @@ The part of the website which holds the identity of members
 
 Wish to contribute? You can find a detailed guide [here](./CONTRIBUTING.md)!
 
-## Project Structure
+## Project Structur
 
 We are using AWS SAM(Serverless Application Model) with [golang](https://go.dev/). The AWS Serverless Application Model (SAM) is an open-source framework for building serverless applications. It provides shorthand syntax to express functions, APIs, databases, and event source mappings. With just a few lines per resource, you can define the application you want and model it using YAML. Read more about SAM [here](https://aws.amazon.com/serverless/sam/).
 
