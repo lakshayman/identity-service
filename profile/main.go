@@ -4,6 +4,7 @@ import (
 	// "errors"
 	"context"
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -145,6 +146,7 @@ func getFirestoreKey() string {
  Function to initialize the firestore client
 */
 func initializeFirestoreClient(ctx context.Context) (*firestore.Client, error) {
+	fmt.Println(getFirestoreKey())
 	sa := option.WithCredentialsJSON([]byte(getFirestoreKey()))
 	app, err := firebase.NewApp(ctx, nil, sa)
 	if err != nil {
